@@ -1,4 +1,4 @@
-# FINANCE
+# FINANCE (Personal)
 
 ## 📌 Description
 
@@ -33,3 +33,7 @@ flask run
 - Buy: Enter stock symbol and valid amount of shares to buy
 - Sell: Enter stock symbol and valid number of shares to sell
 - History: View transaction history
+
+## Credits
+
+- Project adapted from CS50x project assignment. Week 9: Finance.
