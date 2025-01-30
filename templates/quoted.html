@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+<div class="section">
+
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>{{ stock["symbol"] }}</td>
+                <td>{{ stock["price"] | usd }}</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form action="/buy" method="get">
+                        <button class="btn btn-primary" type="submit">Buy</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/sell" method="get">
+                        <button class="btn btn-primary" type="submit">Sell</button>
+                    </form>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}

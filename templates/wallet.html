@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Wallet
+{% endblock %}
+
+{% block main %}
+    <form action="/wallet" method="post">
+        <div class="mb-3">
+            <p>Cash balance: {{ cash | usd }}</p>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="amount" placeholder="Amount" type="number" min="1" step="0.01">
+        </div>
+        <button class="btn btn-primary" type="submit" name="update" value="topup">Top up</button>
+        <button class="btn btn-primary" type="submit" name="update" value="withdraw">Withdraw</button>
+    </form>
+{% endblock %}
