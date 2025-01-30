@@ -14,5 +14,9 @@ Wesbsite simulating a simplified online trading platform.
 # Clone repository
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
-pip install -r requirements.txt  # For Python projects
-npm install  # For Node.js projects
+
+#Install requirements
+pip install -r requirements.txt
+
+# Run flask
+flask run
